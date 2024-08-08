@@ -2,8 +2,6 @@ import { useState, useRef } from "react";
 import { FFmpeg } from "@ffmpeg/ffmpeg";
 import { toBlobURL, fetchFile } from "@ffmpeg/util";
 
-import "../public/coi-serviceworker.js";
-
 function App() {
 	const [loaded, setLoaded] = useState(false);
 	const ffmpegRef = useRef(new FFmpeg());
