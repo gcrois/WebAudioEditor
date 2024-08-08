@@ -30,7 +30,6 @@ export default defineConfig({
 				main: "./index.html",
 				popout: "./popout.html",
 			},
-			external: ["./history"],
 		},
 	},
 	resolve: {
