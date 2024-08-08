@@ -9,7 +9,7 @@ import packageJson from "./package.json";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-	base: "/DeckFlow/",
+	base: "/WebAudioEditor/",
 	plugins: [
 		wasm(),
 		topLevelAwait(),
