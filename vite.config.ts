@@ -46,7 +46,9 @@ export default defineConfig({
 		},
 	},
 	define: {
-		"import.meta.env.VITE_BUILD_DATE": JSON.stringify(new Date().toISOString()),
+		"import.meta.env.VITE_BUILD_DATE": JSON.stringify(
+			new Date().toISOString(),
+		),
 		"import.meta.env.VITE_APP_VERSION": JSON.stringify(
 			process.env.npm_package_version,
 		),
@@ -56,8 +58,8 @@ export default defineConfig({
 	},
 	server: {
 		headers: {
-		  "Cross-Origin-Opener-Policy": "same-origin",
-		  "Cross-Origin-Embedder-Policy": "require-corp",
+			"Cross-Origin-Opener-Policy": "same-origin",
+			"Cross-Origin-Embedder-Policy": "require-corp",
 		},
 	},
 });
