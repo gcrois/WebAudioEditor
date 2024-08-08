@@ -103,7 +103,7 @@ export const AudioEditorProvider: React.FC<AudioEditorProviderProps> = ({
 				duration,
 				outputFileName,
 			);
-			audioEditor.createDownloadableFile(cutBlob, "cut_audio.mp3");
+			audioEditor.createDownloadableFile(cutBlob, outputFileName);
 		}
 	};
 
