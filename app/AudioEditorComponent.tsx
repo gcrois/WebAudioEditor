@@ -159,7 +159,7 @@ const AudioEditorComponent: React.FC = () => {
 				accept="audio/*"
 			/>
 			<button onClick={handleLoadExample}>Load Example Audio</button> from
-			defunct <a>Pandora Records</a>
+			defunct <a href="https://www.ibiblio.org/pandora/HOMEPAGE.html">Pandora Records</a>
 			{isLoading && <div>Loading audio file...</div>}
 			<div
 				ref={waveformRef}
