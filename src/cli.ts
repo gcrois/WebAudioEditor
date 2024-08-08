@@ -1,5 +1,4 @@
-async function main() {
-	console.log("Hello from the CLI");
-}
+import { FFmpeg } from "@ffmpeg/ffmpeg";
+import { fetchFile, toBlobURL } from "@ffmpeg/util";
 
-main();
+console.log("Hello, FFmpeg!");

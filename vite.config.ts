@@ -10,6 +10,9 @@ import packageJson from "./package.json";
 // https://vitejs.dev/config/
 export default defineConfig({
 	base: "/WebAudioEditor/",
+	optimizeDeps: {
+		exclude: ["@ffmpeg/ffmpeg", "@ffmpeg/util"],
+	},
 	plugins: [
 		wasm(),
 		topLevelAwait(),
@@ -47,5 +50,12 @@ export default defineConfig({
 		),
 		"import.meta.env.VITE_PROJ_TITLE": `"${packageJson.showName || packageJson.name}"`,
 		"import.meta.env.VITE_PROJ_DESCRIPTION": `"${packageJson.description}"`,
+		"import.meta.env.VITE_BASE_URL": "/WebAudioEditor/",
+	},
+	server: {
+		headers: {
+		  "Cross-Origin-Opener-Policy": "same-origin",
+		  "Cross-Origin-Embedder-Policy": "require-corp",
+		},
 	},
 });
