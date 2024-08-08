@@ -52,7 +52,7 @@ export default defineConfig({
 		),
 		"import.meta.env.VITE_PROJ_TITLE": `"${packageJson.showName || packageJson.name}"`,
 		"import.meta.env.VITE_PROJ_DESCRIPTION": `"${packageJson.description}"`,
-		"import.meta.env.VITE_BASE_URL": baseURL,
+		"import.meta.env.VITE_BASE_URL": JSON.stringify(baseURL),
 	},
 	server: {
 		headers: {
