@@ -1,6 +1,10 @@
 {
 	"name": "webaudio",
 	"showName": "WebAudio",
+	"exports": {
+		".": "./app/index.ts"
+	},
+	"type": "module",
 	"description": "A simple audio editor for the web",
 	"private": true,
 	"version": "0.0.1",

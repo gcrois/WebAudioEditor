@@ -5,7 +5,7 @@ import React, {
 	useEffect,
 	ReactNode,
 } from "react";
-import { AudioEditor } from "@src/AudioEditor";
+import { AudioEditor } from "../src/AudioEditor";
 
 interface AudioEditorContextType {
 	audioEditor: AudioEditor | null;

@@ -1,5 +1,5 @@
 import { AudioEditorProvider } from "./AudioEditorContext";
-import AudioEditorComponent from "./AudioEditorComponent";
+import { AudioEditorComponent } from "./AudioEditorComponent";
 
 import "./style.scss";
 

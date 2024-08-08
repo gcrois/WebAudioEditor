@@ -3,7 +3,7 @@ import { useAudioEditor } from "./AudioEditorContext";
 import WaveSurfer from "wavesurfer.js";
 import RegionsPlugin from "wavesurfer.js/dist/plugins/regions.esm.js";
 
-const AudioEditorComponent: React.FC = () => {
+export const AudioEditorComponent: React.FC = () => {
 	const { isLoaded, isAudioLoaded, message, loadAudio, cutAudio } =
 		useAudioEditor();
 
@@ -205,5 +205,3 @@ const AudioEditorComponent: React.FC = () => {
 		</div>
 	);
 };
-
-export default AudioEditorComponent;
