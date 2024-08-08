@@ -7,9 +7,11 @@ import svgr from "vite-plugin-svgr";
 
 import packageJson from "./package.json";
 
+const baseURL = "/WebAudioEditor/";
+
 // https://vitejs.dev/config/
 export default defineConfig({
-	base: "/WebAudioEditor/",
+	base: baseURL,
 	optimizeDeps: {
 		exclude: ["@ffmpeg/ffmpeg", "@ffmpeg/util"],
 	},
@@ -50,7 +52,7 @@ export default defineConfig({
 		),
 		"import.meta.env.VITE_PROJ_TITLE": `"${packageJson.showName || packageJson.name}"`,
 		"import.meta.env.VITE_PROJ_DESCRIPTION": `"${packageJson.description}"`,
-		"import.meta.env.VITE_BASE_URL": "/WebAudioEditor/",
+		"import.meta.env.VITE_BASE_URL": baseURL,
 	},
 	server: {
 		headers: {
